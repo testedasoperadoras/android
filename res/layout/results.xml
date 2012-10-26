@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"/>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="15"
+    	android:background="@drawable/speed"    	
+    >
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:textColor="#6284b8"
+         />
+    </RelativeLayout>  
+       
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="15"     	  	
+    >
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="55"
+        android:paddingTop="10dp"
+        android:background="@drawable/bluebg">
+    
+	    <TableRow
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="12"
+	        android:layout_marginLeft="20dp"
+	     >        
+	     	<TextView
+	        android:id="@+id/filler"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"	        
+	         />
+	     	<TextView
+	        android:id="@+id/filler1"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"	        
+	         />
+		     <TextView
+	        android:id="@+id/tvPre"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	        
+	        android:text="Pré-Pago"
+	        android:textStyle="bold"
+	        android:layout_weight="35"	
+	         />
+		     <TextView
+	        android:id="@+id/tvPos"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	        
+	        android:text="Pós-Pago"
+	        android:textStyle="bold"
+	        android:layout_weight="35"
+	         />	    
+	    </TableRow>
+	    
+	    <TableRow
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="22"
+	        android:layout_marginLeft="20dp"
+	     >
+		     <ImageView 
+		        android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/claro"
+		         />
+		     <TextView
+	        android:id="@+id/filler2"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"	        
+	         />
+		     <TextView
+	        android:id="@+id/claroPre"	        
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"	
+	        android:text="66 kbps"        
+	         />
+		     <TextView
+	        android:id="@+id/claroPos"
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="366 kbps" 	        
+	         />	    
+	    </TableRow>
+	    
+       <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="22"
+        android:layout_marginLeft="20dp"
+	     >
+		     <ImageView 
+		        android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/oi"
+		         />
+		      <TextView
+	        android:id="@+id/filler3"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"	        
+	         />
+		     <TextView
+	        android:id="@+id/oiPre"	        
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"	
+	        android:text="33 kbps"         
+	         />
+		     <TextView
+	        android:id="@+id/oiPos"
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="466 kbps" 	        
+	         />	    
+	    </TableRow>
+	    
+          <TableRow
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="22"
+	        android:layout_marginLeft="20dp"
+	     >
+		     <ImageView 
+		        android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/tim"
+		         />
+		      <TextView
+	        android:id="@+id/filler4"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"	        
+	         />
+		     <TextView
+	        android:id="@+id/timPre"	        
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="126 kbps" 	        
+	         />
+		     <TextView
+	        android:id="@+id/timPos"
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="2166 kbps" 	        
+	         />	    
+	    </TableRow>
+	    
+             <TableRow
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="22"
+	        android:layout_marginLeft="20dp"
+	     >
+		     <ImageView 
+		        android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/vivo"
+		         />
+		      <TextView
+	        android:id="@+id/filler5"	        
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"	        
+	         />
+		     <TextView
+	        android:id="@+id/vivoPre"	        
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"	
+	        android:layout_gravity="center_vertical"
+	        android:text="86 kbps"         
+	         />
+		     <TextView
+	        android:id="@+id/vivoPos"
+	        android:layout_width="0dp"
+	        android:layout_weight="35"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="766 kbps" 	        
+	         />	    
+	    </TableRow>
+	    
+        
+    </TableLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="15"
+    >
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/refazerbutton"
+        android:onClick="restartTest" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

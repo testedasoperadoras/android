@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Teste das Operadoras</string>
+    <string name="div">Linha divisoria</string>
+    <string name="logo">Logo</string>
+    
+    <string-array name="spinner">
+	    <item>Comparar resultado com...</item>
+	    <item>Média do Brasil</item>
+	    <item>Média do Seu Estado</item>
+	    <item>Média da Sua Cidade</item>	    
+	</string-array>
+
+</resources>

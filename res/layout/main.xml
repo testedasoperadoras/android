@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"/>    
+
+    <LinearLayout
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	    	
+	    	android:background="@drawable/bluebg"
+	    	android:orientation="vertical" 
+	    	android:layout_gravity="center"   	
+	    >
+	    <TextView
+	        android:id="@+id/tv1"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"
+	         />
+	    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:src="@drawable/line"
+        android:contentDescription="@string/div"/>  
+	    <TextView
+	        android:id="@+id/tv2"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"
+	         />
+	    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:src="@drawable/line"
+        android:contentDescription="@string/div"/>  
+	    <TextView
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:id="@+id/tv3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"
+	         />
+	    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:src="@drawable/line"
+        android:contentDescription="@string/div"/>  
+	    <TextView
+	        android:id="@+id/tv4"
+	        android:layout_marginTop="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"
+	        />    
+	   
+	</LinearLayout>    
+
+    <RelativeLayout       
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"    	
+    >
+	<Button
+        android:id="@+id/button2"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verestatisticasbutton"
+        android:layout_centerInParent="true" 
+        android:layout_centerVertical="true"
+         /> 
+         
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iniciarbutton"
+        android:layout_centerInParent="true"   
+        android:layout_above="@id/button2"     
+        android:onClick="startTest" />
+     
+     <Button
+        android:id="@+id/button3"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/metodologiabutton"
+        android:layout_centerInParent="true" 
+        android:layout_below="@id/button2"       
+        />        
+    
+    </RelativeLayout> 
+    
+
+</LinearLayout>
